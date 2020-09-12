@@ -6,6 +6,7 @@ public class Vocab {
 
     public static void main(String[] args) throws InterruptedException {
         String vocab = "Dictionaries/vocab.txt";
+//        String vocab = "Dictionaries/test3";
         HashMap<String, String> dict = createDict(vocab);
         Random rand = new Random();
         int wordNum = rand.nextInt(dict.size());
@@ -15,7 +16,8 @@ public class Vocab {
         List<String> words = new ArrayList<>(dict.keySet());
 
         System.out.println(words.get(wordNum));
-        TimeUnit.SECONDS.sleep(5);
+//        TimeUnit.SECONDS.sleep(10);
+
         System.out.println(dict.get(words.get(wordNum)));
     }
 
