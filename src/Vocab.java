@@ -5,8 +5,8 @@ import java.util.concurrent.TimeUnit;
 public class Vocab {
 
     public static void main(String[] args) throws InterruptedException {
-        String vocab = "Dictionaries/vocab.txt";
-//        String vocab = "Dictionaries/test3";
+        String vocab = "Dictionaries/vocab";
+//        String vocab = "Dictionaries/test8";
         HashMap<String, String> dict = createDict(vocab);
         Random rand = new Random();
         int wordNum = rand.nextInt(dict.size());
@@ -18,7 +18,7 @@ public class Vocab {
         System.out.println(words.get(wordNum));
 //        TimeUnit.SECONDS.sleep(10);
 
-        System.out.println(dict.get(words.get(wordNum)));
+//        System.out.println(dict.get(words.get(wordNum)));
     }
 
     private static HashMap createDict(String vocab){
