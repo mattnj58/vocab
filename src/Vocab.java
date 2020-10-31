@@ -9,19 +9,18 @@ public class Vocab {
 
     public static void main(String[] args) throws InterruptedException {
 //        String vocab = "Dictionaries/vocab";
-        String testNum = "12";
+        String testNum = "4";
         String vocab = "Dictionaries/test"+testNum;
-//        String vocab = "Dictionaries/vocab";
         HashMap<String, String> dict = createDict(vocab);
         Random rand = new Random();
         int wordNum = rand.nextInt(dict.size());
 
-        System.out.println("Dictionary Size: "+dict.size());
+        System.out.println("Test #" + testNum);
 
         ArrayList<String> words = new ArrayList<>(dict.keySet());
 
         System.out.println(words.get(wordNum));
-        Thread.sleep(6000);
+        Thread.sleep(10000);
         System.out.println(dict.get(words.get(wordNum)));
     }
 
