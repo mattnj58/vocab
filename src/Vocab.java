@@ -9,7 +9,7 @@ public class Vocab {
 
     public static void main(String[] args) throws InterruptedException {
         String testMain = "Dictionaries/testMain";
-        String testNum = "Main";
+        String testNum = "18";
         String vocab = "Dictionaries/test"+testNum;
         HashMap<String, String> dict = createDict(vocab);
         Random rand = new Random();
