@@ -11,11 +11,13 @@ public class Vocab {
         String testMain = "Dictionaries/testMain";
         String testNum = "16";
         String vocab = "Dictionaries/test"+testNum;
+//        String vocab = "Dictionaries/testMain";
         HashMap<String, String> dict = createDict(vocab);
         Random rand = new Random();
         int wordNum = rand.nextInt(dict.size());
 
         System.out.println("Test: " + testNum);
+//        System.out.println("Test: Main");
         System.out.println("Test Size: " + dict.size());
 
         ArrayList<String> words = new ArrayList<>(dict.keySet());
